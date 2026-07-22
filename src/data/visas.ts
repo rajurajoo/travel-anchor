@@ -1,0 +1,28 @@
+import { VisaListing } from "@/lib/types";
+
+export const visas: VisaListing[] = [
+  { country: "Thailand", region: "Southeast Asia", type: "Visa on Arrival", processingDays: "On arrival", price: 1200 },
+  { country: "Indonesia", region: "Southeast Asia", type: "Visa on Arrival", processingDays: "On arrival", price: 1500 },
+  { country: "Vietnam", region: "Southeast Asia", type: "E-Visa", processingDays: "3-5 days", price: 2100 },
+  { country: "Singapore", region: "Southeast Asia", type: "E-Visa", processingDays: "3-5 days", price: 2500 },
+  { country: "Malaysia", region: "Southeast Asia", type: "E-Visa", processingDays: "2-4 days", price: 1800 },
+  { country: "Cambodia", region: "Southeast Asia", type: "E-Visa", processingDays: "3 days", price: 1900 },
+  { country: "United Arab Emirates", region: "Middle East", type: "E-Visa", processingDays: "3-4 days", price: 4200 },
+  { country: "Qatar", region: "Middle East", type: "Visa on Arrival", processingDays: "On arrival", price: 900 },
+  { country: "Jordan", region: "Middle East", type: "E-Visa", processingDays: "4-5 days", price: 3800 },
+  { country: "Turkey", region: "Middle East", type: "E-Visa", processingDays: "1-2 days", price: 3400 },
+  { country: "Maldives", region: "South Asia", type: "Visa on Arrival", processingDays: "On arrival", price: 0 },
+  { country: "Sri Lanka", region: "South Asia", type: "E-Visa", processingDays: "1-2 days", price: 2200 },
+  { country: "Switzerland", region: "Europe", type: "Sticker Visa", processingDays: "10-15 days", price: 8500 },
+  { country: "France", region: "Europe", type: "Sticker Visa", processingDays: "10-15 days", price: 8500 },
+  { country: "Greece", region: "Europe", type: "Sticker Visa", processingDays: "10-15 days", price: 8200 },
+  { country: "United Kingdom", region: "Europe", type: "Sticker Visa", processingDays: "15-20 days", price: 11500 },
+  { country: "Georgia", region: "Europe", type: "E-Visa", processingDays: "3-5 days", price: 2600 },
+  { country: "Azerbaijan", region: "Europe", type: "E-Visa", processingDays: "3 days", price: 2400 },
+  { country: "USA", region: "Americas", type: "Sticker Visa", processingDays: "Varies (interview-based)", price: 14500 },
+  { country: "Canada", region: "Americas", type: "Sticker Visa", processingDays: "20-30 days", price: 12500 },
+  { country: "Egypt", region: "Africa", type: "E-Visa", processingDays: "5-7 days", price: 3200 },
+  { country: "Kenya", region: "Africa", type: "E-Visa", processingDays: "3-5 days", price: 3600 },
+  { country: "Mauritius", region: "Africa", type: "Visa on Arrival", processingDays: "On arrival", price: 0 },
+  { country: "Morocco", region: "Africa", type: "E-Visa", processingDays: "5-7 days", price: 3000 },
+];
