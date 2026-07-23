@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import PackageCard from "@/components/PackageCard";
 import BlogCard from "@/components/BlogCard";
-import HeroVideo from "@/components/HeroVideo";
+import HeroShowcase from "@/components/HeroShowcase";
 import Reveal from "@/components/Reveal";
 import { getFeaturedPackages } from "@/lib/packages";
 import { getRecentPosts } from "@/lib/blog";
@@ -91,7 +91,7 @@ export default function Home() {
 
   return (
     <div>
-      <HeroVideo />
+      <HeroShowcase />
 
       <DestinationMarquee />
 

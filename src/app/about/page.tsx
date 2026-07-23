@@ -80,10 +80,10 @@ export default function AboutPage() {
         {stamps.map((s, i) => (
           <Reveal key={s.label} delay={i * 120}>
             <div
-              className={`glass-strong flex ${s.rotate} w-40 flex-col items-center rounded-2xl border-2 border-dashed border-brass/60 px-5 py-4 text-center shadow-lg`}
+              className={`flex ${s.rotate} w-40 flex-col items-center rounded-2xl border-2 border-dashed border-brass/60 bg-white px-5 py-4 text-center shadow-xl shadow-black/20`}
             >
               <span className="font-display text-2xl font-semibold text-ink">{s.value}</span>
-              <span className="mt-1 text-[11px] uppercase tracking-wide text-ink-faint">
+              <span className="mt-1 text-[11px] font-semibold uppercase tracking-wide text-ink-soft">
                 {s.label}
               </span>
             </div>
