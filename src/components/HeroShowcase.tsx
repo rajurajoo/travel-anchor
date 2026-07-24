@@ -43,7 +43,7 @@ const slides = [
     href: "/packages/bali-honeymoon-escape",
     cards: [
       { label: "Uluwatu Cliffs, Bali", image: "/images/packages/bali-honeymoon-escape.jpg" },
-      { label: "Honeymoon Escapes", image: "/images/misc/category-honeymoon.jpg" },
+      { label: "Kelingking Beach", image: "/images/misc/bali-kelingking-beach.jpg" },
       { label: "Ubud Rice Terraces", image: "/images/misc/bali-rice-terrace.jpg" },
     ],
   },
@@ -86,7 +86,7 @@ const slides = [
     cards: [
       { label: "Gardens by the Bay", image: "/images/packages/singapore-family-weekend.jpg" },
       { label: "Sentosa Island", image: "/images/misc/singapore-sentosa.jpg" },
-      { label: "Family Weekend", image: "/images/misc/category-domestic.jpg" },
+      { label: "Marina Bay Sands", image: "/images/misc/singapore-marina-bay-sands.jpg" },
     ],
   },
   {
