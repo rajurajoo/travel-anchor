@@ -6,6 +6,20 @@ import { useEffect, useRef, useState } from "react";
 
 const slides = [
   {
+    country: "United Arab Emirates",
+    tag: "Dubai",
+    heading: "DUBAI",
+    blurb:
+      "Burj Khalifa views, a desert safari with dinner under the stars, and enough mall time to cover every wishlist.",
+    bg: "/images/hero/dubai-sunset-fountain.jpg",
+    href: "/packages/dubai-city-and-desert",
+    cards: [
+      { label: "Burj Khalifa", image: "/images/misc/dubai-burj-khalifa-reflection.jpg" },
+      { label: "Burj Al Arab Beach", image: "/images/misc/dubai-burj-al-arab-beach.jpg" },
+      { label: "Desert Safari", image: "/images/misc/dubai-desert-safari.jpg" },
+    ],
+  },
+  {
     country: "Thailand",
     tag: "Thailand",
     heading: "THAILAND",
