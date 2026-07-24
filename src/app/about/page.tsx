@@ -55,7 +55,7 @@ export default function AboutPage() {
       {/* Hero */}
       <section className="relative h-[56vh] min-h-[420px] w-full overflow-hidden">
         <Image
-          src="/images/misc/about-hero.jpg"
+          src="/images/misc/about-banner-heritage.jpg"
           alt="Travel Anchor Tours & Travels"
           fill
           priority
@@ -126,6 +126,28 @@ export default function AboutPage() {
             </div>
           </div>
         </section>
+
+        {/* Travelers photo */}
+        <Reveal>
+          <div className="relative mt-20 aspect-[16/9] overflow-hidden rounded-3xl sm:aspect-[21/9]">
+            <Image
+              src="/images/misc/travelers-austria-lake.jpg"
+              alt="Travelers taking in the view on a Travel Anchor trip"
+              fill
+              sizes="100vw"
+              className="object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+            <div className="glass absolute bottom-5 left-5 right-5 rounded-2xl px-5 py-3 sm:right-auto sm:max-w-sm">
+              <p className="font-display text-lg font-semibold text-white">
+                Real trips, real people
+              </p>
+              <p className="text-[11px] text-white/75">
+                Every itinerary is built the way we&apos;d plan our own trip.
+              </p>
+            </div>
+          </div>
+        </Reveal>
 
         {/* What we offer */}
         <section className="mt-20">

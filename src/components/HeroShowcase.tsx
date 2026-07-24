@@ -11,7 +11,7 @@ const slides = [
     heading: "THAILAND",
     blurb:
       "Bangkok's street-food chaos, Phi Phi's limestone cliffs, and a sunset longtail-boat ride — a first-timer's Thailand done right.",
-    bg: "/images/packages/thailand-island-hopper.jpg",
+    bg: "/images/hero/thailand.jpg",
     href: "/packages/thailand-island-hopper",
     cards: [
       { label: "Grand Palace, Bangkok", image: "/images/packages/thailand-island-hopper.jpg" },
@@ -25,7 +25,7 @@ const slides = [
     heading: "INDONESIA",
     blurb:
       "Private villa pools, rice-terrace breakfasts, and a clifftop dinner in Uluwatu — built for two, start to finish.",
-    bg: "/images/packages/bali-honeymoon-escape.jpg",
+    bg: "/images/hero/bali.jpg",
     href: "/packages/bali-honeymoon-escape",
     cards: [
       { label: "Uluwatu Cliffs, Bali", image: "/images/packages/bali-honeymoon-escape.jpg" },
@@ -39,7 +39,7 @@ const slides = [
     heading: "KERALA",
     blurb:
       "Backwater houseboats, spice-scented hills, and quiet beach towns — God's Own Country at an easy pace.",
-    bg: "/images/packages/kerala-backwaters-and-hills.jpg",
+    bg: "/images/hero/kerala.jpg",
     href: "/packages/kerala-backwaters-and-hills",
     cards: [
       { label: "Alleppey Backwaters", image: "/images/packages/kerala-backwaters-and-hills.jpg" },
@@ -48,12 +48,26 @@ const slides = [
     ],
   },
   {
+    country: "Tamil Nadu",
+    tag: "Tamil Nadu",
+    heading: "TAMIL NADU",
+    blurb:
+      "Ooty's lakes and tea gardens, Kodaikanal's misty viewpoints — hill-station escapes from ₹6,999.",
+    bg: "/images/hero/tamil-nadu.jpg",
+    href: "/packages/ooty-hill-station-getaway",
+    cards: [
+      { label: "Ooty Lake", image: "/images/packages/ooty-hill-station-getaway.jpg" },
+      { label: "Kodaikanal Lake", image: "/images/packages/kodaikanal-princess-of-hills.jpg" },
+      { label: "Munnar Tea Gardens", image: "/images/packages/munnar-tea-gardens-escape.jpg" },
+    ],
+  },
+  {
     country: "Singapore",
     tag: "Singapore",
     heading: "SINGAPORE",
     blurb:
       "Gardens by the Bay, a Universal Studios day, and the Night Safari — built around what keeps kids and adults both happy.",
-    bg: "/images/packages/singapore-family-weekend.jpg",
+    bg: "/images/hero/singapore.jpg",
     href: "/packages/singapore-family-weekend",
     cards: [
       { label: "Gardens by the Bay", image: "/images/packages/singapore-family-weekend.jpg" },
@@ -67,7 +81,7 @@ const slides = [
     heading: "EUROPE",
     blurb:
       "Zurich to Zermatt by scenic rail, with the Jungfraujoch and a Lake Lucerne cruise in between.",
-    bg: "/images/blog/switzerland-mid-range-budget.jpg",
+    bg: "/images/hero/europe.jpg",
     href: "/packages/switzerland-alpine-classic",
     cards: [
       { label: "Lake Lucerne, Switzerland", image: "/images/blog/switzerland-mid-range-budget.jpg" },
@@ -81,7 +95,7 @@ const slides = [
     heading: "USA",
     blurb:
       "New York's skyline, the open road beyond it, and a trip we're just getting started planning — tell us what you have in mind.",
-    bg: "/images/misc/usa-new-york.jpg",
+    bg: "/images/hero/usa.jpg",
     href: "/contact",
     cards: [
       { label: "New York City", image: "/images/misc/usa-new-york.jpg" },

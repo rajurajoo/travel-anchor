@@ -3,6 +3,7 @@ import Link from "next/link";
 import PackageCard from "@/components/PackageCard";
 import BlogCard from "@/components/BlogCard";
 import HeroShowcase from "@/components/HeroShowcase";
+import TravelMoments from "@/components/TravelMoments";
 import Reveal from "@/components/Reveal";
 import { getFeaturedPackages } from "@/lib/packages";
 import { getRecentPosts } from "@/lib/blog";
@@ -174,6 +175,8 @@ export default function Home() {
         </div>
       </section>
 
+      <TravelMoments />
+
       {/* Featured packages — swipeable shelf */}
       <section className="py-16">
         <div className="mx-auto flex max-w-6xl flex-wrap items-end justify-between gap-4 px-6">
@@ -289,13 +292,19 @@ function TravelPicture() {
   return (
     <div className="relative aspect-[4/3] overflow-hidden rounded-3xl">
       <Image
-        src="/images/misc/about-hero.jpg"
+        src="/images/misc/travel-girl-flight.jpg"
         alt="Travel Anchor Tours & Travels — journeys across India and beyond"
         fill
         sizes="(min-width: 1024px) 50vw, 100vw"
         className="object-cover"
       />
       <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-transparent to-black/10" />
+      <div
+        aria-hidden="true"
+        className="absolute -top-4 -right-4 flex h-16 w-16 rotate-12 items-center justify-center rounded-full bg-brass shadow-lg shadow-black/30 sm:h-20 sm:w-20"
+      >
+        <FlightIcon />
+      </div>
       <div className="glass absolute bottom-5 left-5 right-5 flex items-center justify-between rounded-2xl px-5 py-3 sm:right-auto">
         <div>
           <p className="font-display text-lg font-semibold text-white">15+ Years</p>
@@ -303,5 +312,16 @@ function TravelPicture() {
         </div>
       </div>
     </div>
+  );
+}
+
+function FlightIcon() {
+  return (
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" className="-rotate-12 text-[#20140a] sm:h-9 sm:w-9" aria-hidden="true">
+      <path
+        d="M21 12.5 13.5 9V4.5a1.5 1.5 0 0 0-3 0V9L3 12.5v2l7.5-2.3V17l-2.3 1.7v1.5l3.3-.9 3.3.9v-1.5L12.5 17v-4.8L21 14.5v-2Z"
+        fill="currentColor"
+      />
+    </svg>
   );
 }

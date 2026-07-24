@@ -830,4 +830,164 @@ export const packages: TourPackage[] = [
     },
     coverGradient: ["#2B4C6E", "#D8DEE8"],
   },
+  {
+    slug: "ooty-hill-station-getaway",
+    name: "Ooty Tour Package",
+    category: "Domestic",
+    tags: ["Family"],
+    country: "India",
+    state: "Tamil Nadu",
+    region: "South India",
+    continent: "India",
+    days: 3,
+    nights: 2,
+    price: 6999,
+    summary:
+      "Ooty Lake, the Botanical Garden, Doddabetta Peak, and a Coonoor detour — the Nilgiris in an easy long weekend.",
+    highlights: [
+      "Ooty Lake, Botanical Garden & Rose Garden",
+      "Doddabetta Peak and a tea factory tour",
+      "Coonoor sightseeing — Sim's Park, Dolphin's Nose & Lamb's Rock",
+      "Pykara Lake & Falls",
+    ],
+    itinerary: [
+      {
+        title: "Arrival & Local Sightseeing",
+        activities: [
+          "Arrival at Coimbatore Airport/Railway Station, transfer to Ooty",
+          "Hotel check-in",
+          "Visit Ooty Lake, Botanical Garden & Rose Garden",
+          "Evening shopping at Charring Cross",
+        ],
+      },
+      {
+        title: "Ooty & Coonoor",
+        activities: [
+          "Breakfast at hotel",
+          "Visit Doddabetta Peak, Tea Factory & Museum",
+          "Coonoor sightseeing — Sim's Park, Dolphin's Nose & Lamb's Rock",
+          "Return to Ooty for the night",
+        ],
+      },
+      {
+        title: "Departure",
+        activities: [
+          "Breakfast",
+          "Visit Pykara Lake & Falls (subject to time)",
+          "Drop at Coimbatore Airport/Railway Station",
+        ],
+      },
+    ],
+    inclusions: {
+      stay: "2 nights hotel in Ooty",
+      transport: "Private car throughout",
+      sightseeing: "All entries as per itinerary",
+      visaIncluded: false,
+    },
+    coverGradient: ["#2E6B4F", "#BFE3C9"],
+  },
+  {
+    slug: "kodaikanal-princess-of-hills",
+    name: "Kodaikanal Tour Package",
+    category: "Domestic",
+    tags: ["Family"],
+    country: "India",
+    state: "Tamil Nadu",
+    region: "South India",
+    continent: "India",
+    days: 3,
+    nights: 2,
+    price: 7499,
+    summary:
+      "Coaker's Walk, Pillar Rocks, Guna Caves, and Silver Cascade Falls — the Princess of Hill Stations at a relaxed pace.",
+    highlights: [
+      "Coaker's Walk, Bryant Park & Kodaikanal Lake",
+      "Pillar Rocks and the Pine Forest",
+      "Guna Caves and Moir Point",
+      "Silver Cascade Falls",
+    ],
+    itinerary: [
+      {
+        title: "Arrival & Local Sightseeing",
+        activities: [
+          "Arrival at Madurai Airport/Railway Station, transfer to Kodaikanal",
+          "Hotel check-in",
+          "Visit Coaker's Walk, Bryant Park & Kodaikanal Lake",
+        ],
+      },
+      {
+        title: "Full Day Sightseeing",
+        activities: [
+          "Breakfast",
+          "Visit Pillar Rocks, Pine Forest & Guna Caves",
+          "Moir Point and Silver Cascade Falls",
+        ],
+      },
+      {
+        title: "Departure",
+        activities: ["Breakfast", "Shopping & leisure", "Drop at Madurai Airport/Railway Station"],
+      },
+    ],
+    inclusions: {
+      stay: "2 nights hotel in Kodaikanal",
+      transport: "Private car throughout",
+      sightseeing: "All entries as per itinerary",
+      visaIncluded: false,
+    },
+    coverGradient: ["#3B5F8A", "#CFE0F0"],
+  },
+  {
+    slug: "munnar-tea-gardens-escape",
+    name: "Munnar Tour Package",
+    category: "Domestic",
+    tags: ["Family", "Honeymoon"],
+    country: "India",
+    state: "Kerala",
+    region: "South India",
+    continent: "India",
+    days: 3,
+    nights: 2,
+    price: 8499,
+    summary:
+      "Cheeyappara Falls on the drive in, Eravikulam National Park, Mattupetty Dam, and Kundala Lake — Munnar's tea-garden circuit.",
+    highlights: [
+      "Cheeyappara & Valara Waterfalls",
+      "Eravikulam National Park and the Tea Museum",
+      "Mattupetty Dam & Echo Point",
+      "Kundala Lake",
+    ],
+    itinerary: [
+      {
+        title: "Arrival & Munnar",
+        activities: [
+          "Arrival at Kochi Airport/Railway Station",
+          "Scenic drive to Munnar via Cheeyappara & Valara Waterfalls",
+          "Hotel check-in",
+        ],
+      },
+      {
+        title: "Full Day Sightseeing",
+        activities: [
+          "Breakfast",
+          "Visit Eravikulam National Park and the Tea Museum",
+          "Mattupetty Dam, Echo Point & Kundala Lake",
+        ],
+      },
+      {
+        title: "Departure",
+        activities: [
+          "Breakfast",
+          "Visit Blossom Park (subject to time)",
+          "Drop at Kochi Airport/Railway Station",
+        ],
+      },
+    ],
+    inclusions: {
+      stay: "2 nights hotel in Munnar",
+      transport: "Private car throughout",
+      sightseeing: "All entries as per itinerary",
+      visaIncluded: false,
+    },
+    coverGradient: ["#1F6E43", "#C7E8B0"],
+  },
 ];
