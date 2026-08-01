@@ -4,3 +4,5 @@
 /.netlify
 *.log
 .env*.local
+*.zip
+/wordpress-theme
