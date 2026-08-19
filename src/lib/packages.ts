@@ -11,8 +11,12 @@ export const CONTINENTS: Continent[] = [
   "India",
 ];
 
+// Newest-added packages first — the data file appends new entries at the
+// end, so reversing gives us newest-to-oldest without needing add dates.
+const packagesNewestFirst = [...packages].reverse();
+
 export function getAllPackages(): TourPackage[] {
-  return packages;
+  return packagesNewestFirst;
 }
 
 export function getPackageBySlug(slug: string): TourPackage | undefined {
@@ -30,7 +34,7 @@ export interface PackageFilters {
 
 export function filterPackages(filters: PackageFilters): TourPackage[] {
   const q = filters.query?.trim().toLowerCase();
-  return packages.filter((p) => {
+  return packagesNewestFirst.filter((p) => {
     if (filters.category && p.category !== filters.category) return false;
     if (filters.tag && !p.tags.includes(filters.tag)) return false;
     if (filters.region && p.region !== filters.region) return false;
@@ -53,11 +57,11 @@ export function getContinentCount(continent: Continent): number {
 }
 
 export function getFeaturedPackages(count = 6): TourPackage[] {
-  return packages.slice(0, count);
+  return packagesNewestFirst.slice(0, count);
 }
 
 export function getRelatedPackages(current: TourPackage, count = 3): TourPackage[] {
-  return packages
+  return packagesNewestFirst
     .filter((p) => p.slug !== current.slug && p.region === current.region)
     .slice(0, count);
 }

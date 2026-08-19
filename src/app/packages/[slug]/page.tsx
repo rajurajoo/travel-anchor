@@ -59,9 +59,16 @@ export default async function PackageDetailPage({ params }: { params: Params }) 
       <div className="mx-auto max-w-6xl px-6">
         <div className="grid gap-10 py-10 lg:grid-cols-[1fr_360px]">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-wide text-accent">
-              {pkg.category} · {pkg.state ?? pkg.country}
-            </p>
+            <div className="flex items-center gap-2">
+              <p className="text-xs font-semibold uppercase tracking-wide text-accent">
+                {pkg.category} · {pkg.state ?? pkg.country}
+              </p>
+              {pkg.isNew && (
+                <span className="rounded-full bg-brass px-2.5 py-0.5 text-[11px] font-bold uppercase tracking-wide text-[#20140a]">
+                  New
+                </span>
+              )}
+            </div>
             <h1 className="mt-2 font-display text-3xl font-semibold text-ink md:text-4xl">
               {pkg.name}
             </h1>

@@ -40,6 +40,7 @@ export interface TourPackage {
   itinerary: ItineraryDay[];
   inclusions: Inclusions;
   coverGradient: [string, string];
+  isNew?: boolean;
 }
 
 export type VisaType = "E-Visa" | "Visa on Arrival" | "Sticker Visa";

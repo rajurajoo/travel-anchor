@@ -990,4 +990,324 @@ export const packages: TourPackage[] = [
     },
     coverGradient: ["#1F6E43", "#C7E8B0"],
   },
+  {
+    slug: "sri-lanka-diwali-getaway",
+    name: "Sri Lanka Diwali Getaway",
+    category: "International",
+    tags: ["Family", "Luxury"],
+    country: "Sri Lanka",
+    region: "South Asia",
+    continent: "Asia",
+    days: 7,
+    nights: 6,
+    price: 50000,
+    summary:
+      "Sigiriya's ancient rock fortress, a scenic hill-country train ride, and the Buddha statue at golden hour — a Diwali special in 4-star comfort.",
+    highlights: [
+      "Sigiriya Rock Fortress",
+      "Scenic hill-country train ride",
+      "Buddha statue at golden hour",
+      "City tours & top attractions",
+    ],
+    itinerary: [
+      {
+        title: "Arrival in Colombo",
+        activities: ["Airport pickup", "Transfer to hotel, evening at leisure"],
+      },
+      {
+        title: "Sigiriya",
+        activities: ["Sigiriya Rock Fortress climb", "Village and lake views"],
+      },
+      {
+        title: "Hill Country",
+        activities: ["Scenic train ride through tea country", "Photo stops along the route"],
+      },
+      {
+        title: "Kandy",
+        activities: ["City tour and top attractions", "Buddha statue visit at golden hour"],
+      },
+      {
+        title: "Nuwara Eliya",
+        activities: ["Tea estate visit", "Leisure day in the hills"],
+      },
+      {
+        title: "Bentota / Beach",
+        activities: ["Transfer to the coast", "Free time by the beach"],
+      },
+      {
+        title: "Departure",
+        activities: ["Breakfast", "Airport transfer"],
+      },
+    ],
+    inclusions: {
+      stay: "6 nights in 4-star hotels",
+      transport: "AC vehicle with airport transfers",
+      sightseeing: "City tours, top attractions, English-speaking guide",
+      visaIncluded: false,
+    },
+    coverGradient: ["#5B2A86", "#F2A400"],
+    isNew: true,
+  },
+  {
+    slug: "sri-lanka-island-adventure",
+    name: "Sri Lanka Island Adventure",
+    category: "International",
+    tags: ["Family", "Adventure"],
+    country: "Sri Lanka",
+    region: "South Asia",
+    continent: "Asia",
+    days: 6,
+    nights: 5,
+    price: 35000,
+    summary:
+      "One island, endless memories — Sigiriya, coastal temples, palm-lined beaches, and an elephant encounter, in 4-star hotels.",
+    highlights: [
+      "Sigiriya Rock Fortress",
+      "Coastal stupa and temple visits",
+      "Palm-lined beach time",
+      "Elephant sanctuary visit",
+    ],
+    itinerary: [
+      {
+        title: "Arrival & Colombo",
+        activities: ["Airport pickup", "City orientation drive"],
+      },
+      {
+        title: "Sigiriya",
+        activities: ["Sigiriya Rock Fortress", "Village tour"],
+      },
+      {
+        title: "Kandy",
+        activities: ["Temple visits", "City tour and top attractions"],
+      },
+      {
+        title: "Elephant Sanctuary",
+        activities: ["Morning elephant encounter", "Transfer to the coast"],
+      },
+      {
+        title: "Beach Day",
+        activities: ["Free day at a palm-lined beach", "Optional water sports"],
+      },
+      {
+        title: "Departure",
+        activities: ["Breakfast", "Airport transfer"],
+      },
+    ],
+    inclusions: {
+      stay: "5 nights in 4-star hotels",
+      transport: "AC vehicle with airport transfers",
+      sightseeing: "City tours, top attractions, English-speaking guide",
+      visaIncluded: false,
+    },
+    coverGradient: ["#1B6E8C", "#F2D675"],
+    isNew: true,
+  },
+  {
+    slug: "singapore-explorer-tour",
+    name: "Explore Singapore",
+    category: "International",
+    tags: ["Family", "Luxury"],
+    country: "Singapore",
+    region: "Southeast Asia",
+    continent: "Asia",
+    days: 5,
+    nights: 4,
+    price: 68500,
+    summary:
+      "Gardens by the Bay, Universal Studios, the Marina Bay Sands SkyPark, and the Spectacular Wings of Time show — unforgettable memories await.",
+    highlights: [
+      "Sentosa Island tour & cable car ride",
+      "Universal Studios Singapore",
+      "Gardens by the Bay, Cloud Forest & Flower Dome",
+      "Marina Bay Sands SkyPark",
+    ],
+    itinerary: [
+      {
+        title: "Arrival",
+        activities: ["Airport pickup", "Evening at Gardens by the Bay"],
+      },
+      {
+        title: "Sentosa Island",
+        activities: ["Cable car ride to Sentosa", "Spectacular Wings of Time show"],
+      },
+      {
+        title: "Universal Studios",
+        activities: ["Full day at Universal Studios Singapore"],
+      },
+      {
+        title: "City & Gardens",
+        activities: ["City tour of Singapore", "Cloud Forest Dome & Flower Dome"],
+      },
+      {
+        title: "Departure",
+        activities: ["Marina Bay Sands SkyPark", "Airport transfer"],
+      },
+    ],
+    inclusions: {
+      stay: "4 nights, comfortable stay",
+      transport: "All transfers and sightseeing included",
+      sightseeing: "All entry tickets included",
+      visaIncluded: true,
+    },
+    coverGradient: ["#0B63D6", "#F2C400"],
+    isNew: true,
+  },
+  {
+    slug: "genting-highlands-kuala-lumpur",
+    name: "Genting Highlands & Kuala Lumpur",
+    category: "International",
+    tags: ["Family", "Adventure"],
+    country: "Malaysia",
+    region: "Southeast Asia",
+    continent: "Asia",
+    days: 4,
+    nights: 3,
+    price: 49999,
+    summary:
+      "Genting SkyWorlds theme park, the Awana SkyWay cable car, Batu Caves, and the Petronas Twin Towers — unforgettable moments in the clouds and the city.",
+    highlights: [
+      "Genting Highlands tour & SkyWorlds Theme Park",
+      "Awana SkyWay cable car",
+      "Batu Caves visit",
+      "Kuala Lumpur city tour & Petronas Twin Towers",
+    ],
+    itinerary: [
+      {
+        title: "Arrival & Kuala Lumpur",
+        activities: ["Airport pickup", "Petronas Twin Towers photo stop", "Bukit Bintang shopping area"],
+      },
+      {
+        title: "Genting Highlands",
+        activities: ["Awana SkyWay cable car up to Genting", "Genting SkyWorlds Theme Park"],
+      },
+      {
+        title: "Batu Caves & City",
+        activities: ["Batu Caves visit", "Kuala Lumpur city tour", "KL Tower photo stop"],
+      },
+      {
+        title: "Departure",
+        activities: ["Breakfast", "Airport transfer"],
+      },
+    ],
+    inclusions: {
+      stay: "3 nights accommodation",
+      transport: "All transfers and sightseeing included",
+      sightseeing: "All entry tickets included (flight tickets & visa not included)",
+      visaIncluded: false,
+    },
+    coverGradient: ["#F2A400", "#0B1A26"],
+    isNew: true,
+  },
+  {
+    slug: "vietnam-magic-tour",
+    name: "Discover the Magic of Vietnam",
+    category: "International",
+    tags: ["Family", "Adventure"],
+    country: "Vietnam",
+    region: "Southeast Asia",
+    continent: "Asia",
+    days: 8,
+    nights: 7,
+    price: 46599,
+    summary:
+      "Hanoi's old quarter, an overnight Halong Bay cruise, Ninh Binh's limestone karsts, and Danang's Golden Bridge — breathtaking landscapes end to end.",
+    highlights: [
+      "Halong Bay overnight cruise",
+      "Ninh Binh — Hoa Lu Ancient Capital & Tam Coc",
+      "Ba Na Hills & the Golden Bridge",
+      "Cu Chi Tunnels & Ho Chi Minh City",
+    ],
+    itinerary: [
+      {
+        title: "Arrival in Hanoi",
+        activities: ["Airport transfer", "Half-day Hanoi city tour — Temple of Literature & Hoa Lo Prison"],
+      },
+      {
+        title: "Ninh Binh",
+        activities: ["Full-day tour of Hoa Lu Ancient Capital", "Tam Coc boat ride"],
+      },
+      {
+        title: "Halong Bay",
+        activities: ["Transfer to Halong Bay", "Board overnight cruise with lunch, dinner & activities"],
+      },
+      {
+        title: "Halong Bay Cruise",
+        activities: ["Morning activities on the bay", "Transfer back to Hanoi"],
+      },
+      {
+        title: "Danang & Ba Na Hills",
+        activities: ["Flight to Danang", "Full-day Ba Na Hills tour — Golden Bridge"],
+      },
+      {
+        title: "Danang & Hoi An",
+        activities: ["Marble Mountains, Han River & Dragon Bridge", "Hoi An Ancient Town tour"],
+      },
+      {
+        title: "Ho Chi Minh City",
+        activities: ["Flight to Ho Chi Minh City", "Half-day city tour — Notre Dame Cathedral, Central Post Office, War Remnants Museum, Ben Thanh Market"],
+      },
+      {
+        title: "Departure",
+        activities: ["Cu Chi Tunnels half-day tour", "Departure from Ho Chi Minh City"],
+      },
+    ],
+    inclusions: {
+      stay: "7 nights in 3-star hotels",
+      transport: "Domestic flights (Hanoi–Danang–Ho Chi Minh City), sightseeing & transfers",
+      sightseeing: "Halong Bay overnight cruise, all entry tickets, English-speaking guide",
+      visaIncluded: false,
+    },
+    coverGradient: ["#B7141F", "#F2C400"],
+    isNew: true,
+  },
+  {
+    slug: "dubai-city-of-dreams",
+    name: "Explore Dubai — City of Dreams",
+    category: "International",
+    tags: ["Family", "Honeymoon", "Luxury"],
+    country: "United Arab Emirates",
+    region: "Middle East",
+    continent: "Middle East",
+    days: 5,
+    nights: 4,
+    price: 39999,
+    summary:
+      "Burj Khalifa At the Top, the Dubai Frame, a desert safari with BBQ dinner, and a dhow cruise — a city of dreams, visa included.",
+    highlights: [
+      "Burj Khalifa At the Top & Dubai Frame",
+      "Desert safari with BBQ dinner",
+      "Dhow cruise dinner",
+      "Atlantis The Palm (photo stop) & Dubai Mall",
+    ],
+    itinerary: [
+      {
+        title: "Arrival",
+        activities: ["Airport pickup", "Evening dhow cruise dinner"],
+      },
+      {
+        title: "Dubai City Tour",
+        activities: ["Burj Khalifa At the Top", "Dubai Frame"],
+      },
+      {
+        title: "Desert Safari",
+        activities: ["Dune bashing", "BBQ dinner under the stars"],
+      },
+      {
+        title: "Leisure & Shopping",
+        activities: ["Atlantis The Palm (photo stop)", "Miracle Garden (seasonal)", "Gold Souk & Spice Souk", "Dubai Mall shopping"],
+      },
+      {
+        title: "Departure",
+        activities: ["Breakfast", "Airport transfer"],
+      },
+    ],
+    inclusions: {
+      stay: "4 nights in 3-4 star hotels",
+      transport: "All transfers and sightseeing by AC vehicle",
+      sightseeing: "All entry tickets, UAE tourist visa included, English-speaking guide",
+      visaIncluded: true,
+    },
+    coverGradient: ["#1A4C6E", "#F2A400"],
+    isNew: true,
+  },
 ];

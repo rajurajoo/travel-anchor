@@ -32,6 +32,11 @@ export default function PackageCard({
             className="object-cover transition-transform duration-500 group-hover:scale-105"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/5 to-transparent" />
+          {pkg.isNew && (
+            <span className="absolute right-3 top-3 rounded-full bg-brass px-3 py-1 text-[11px] font-bold uppercase tracking-wide text-[#20140a] shadow-sm">
+              New
+            </span>
+          )}
           <span className="relative rounded-full bg-black/30 px-3 py-1 text-xs font-medium text-white backdrop-blur-sm">
             {pkg.days}D / {pkg.nights}N
           </span>
