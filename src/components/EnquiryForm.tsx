@@ -2,22 +2,36 @@
 
 import { FormEvent, useState } from "react";
 
-export default function EnquiryForm({ defaultDestination }: { defaultDestination?: string }) {
-  const [submitted, setSubmitted] = useState(false);
+type Status = "idle" | "submitting" | "success" | "error";
 
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+export default function EnquiryForm({ defaultDestination }: { defaultDestination?: string }) {
+  const [status, setStatus] = useState<Status>("idle");
+
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    setSubmitted(true);
+    setStatus("submitting");
+
+    const form = e.currentTarget;
+    const data = Object.fromEntries(new FormData(form).entries());
+
+    try {
+      const res = await fetch("/api/enquiry", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+      if (!res.ok) throw new Error("Request failed");
+      setStatus("success");
+    } catch {
+      setStatus("error");
+    }
   }
 
-  if (submitted) {
+  if (status === "success") {
     return (
       <div className="glass rounded-2xl p-6 text-sm text-ink-soft">
         <p className="font-semibold text-ink">Thanks — that's noted.</p>
-        <p className="mt-1">
-          This form isn&apos;t wired to a real inbox yet. Connect it to an
-          email service or CRM before launch.
-        </p>
+        <p className="mt-1">A planner will get back to you shortly.</p>
       </div>
     );
   }
@@ -45,11 +59,17 @@ export default function EnquiryForm({ defaultDestination }: { defaultDestination
       <Field label="Message">
         <textarea name="message" rows={4} className="form-input resize-none" placeholder="Travel dates, group size, anything else" />
       </Field>
+      {status === "error" && (
+        <p className="text-sm text-red-600">
+          Something went wrong sending your enquiry — please call or WhatsApp us instead.
+        </p>
+      )}
       <button
         type="submit"
-        className="mt-1 rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-accent-ink"
+        disabled={status === "submitting"}
+        className="mt-1 rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-accent-ink disabled:opacity-60"
       >
-        Send enquiry
+        {status === "submitting" ? "Sending…" : "Send enquiry"}
       </button>
     </form>
   );
