@@ -8,30 +8,32 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: "Name and phone are required" }, { status: 400 });
   }
 
-  const accessKey = process.env.WEB3FORMS_ACCESS_KEY;
-  if (!accessKey) {
-    console.error("WEB3FORMS_ACCESS_KEY is not set");
+  const apiUrl = process.env.CRM_API_URL;
+  const apiKey = process.env.CRM_API_KEY;
+  if (!apiUrl || !apiKey) {
+    console.error("CRM_API_URL / CRM_API_KEY is not set");
     return NextResponse.json({ error: "Enquiry service not configured" }, { status: 500 });
   }
 
-  const res = await fetch("https://api.web3forms.com/submit", {
+  const res = await fetch(apiUrl, {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
+    headers: {
+      "Content-Type": "application/json",
+      "X-API-Key": apiKey,
+    },
     body: JSON.stringify({
-      access_key: accessKey,
-      subject: `New enquiry from ${name}${destination ? ` — ${destination}` : ""}`,
-      from_name: "Travel Anchor Tours & Travels",
       name,
       phone,
-      email: email || "Not provided",
-      destination: destination || "Not specified",
-      message: message || "No message",
+      email: email || undefined,
+      destination: destination || undefined,
+      message: message || undefined,
+      source: "Website",
     }),
   });
 
-  const data = await res.json();
-  if (!data.success) {
-    console.error("Web3Forms submission failed", data);
+  if (!res.ok) {
+    const errorBody = await res.text();
+    console.error("CRM lead submission failed", res.status, errorBody);
     return NextResponse.json({ error: "Failed to send enquiry" }, { status: 502 });
   }
 
